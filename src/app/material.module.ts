@@ -55,13 +55,14 @@ import { MatTooltipModule } from '@angular/material/tooltip';
        MatSelectModule,
        MatRadioModule,
        MatDatepickerModule,
+       MatNativeDateModule, 
        MatChipsModule,
        MatTooltipModule,
        MatTableModule,
        MatPaginatorModule
     ],
     providers: [
-       MatDatepickerModule,
+       MatDatepickerModule
     ]
  })
  

@@ -50,7 +50,7 @@ mat-sidenav mat-icon{
 .mat-radio-button, .mat-radio-group{
     margin-right: 25px;
 }
-.controlers-wrapper>*{
+.controllers-wrapper>*{
     width: 100%;
     padding: 0;
 }
