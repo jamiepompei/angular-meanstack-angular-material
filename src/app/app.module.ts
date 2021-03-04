@@ -9,6 +9,8 @@ import { StudentListComponent } from './components/student-list/student-list.com
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './material.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ApiService } from './shared/api.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -23,9 +25,11 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule, 
+    FormsModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
