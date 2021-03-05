@@ -89,6 +89,7 @@ public handleError = (controlName: string, errorName: string) => {
 submitStudentForm(){
   if(this.studentForm.valid){
     this.api.addStudent(this.studentForm.value).subscribe( res =>{
+      console.log("submitting form ", res)
       this.ngZone.run(() => this.router.navigateByUrl('/students-list'))
     });
   }

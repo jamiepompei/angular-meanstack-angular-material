@@ -25,6 +25,7 @@ export class EditStudentComponent implements OnInit {
   studentForm!: FormGroup;
   subjectArray: Subject[] = [];
   SectionArray: any = ['A','B', 'C', 'D', 'E'];
+  selected = '';
   
 
 
@@ -91,15 +92,15 @@ export class EditStudentComponent implements OnInit {
 
   /**Date */
   formatDate(e: any){
-    var convertDate = new Date(e.target.value).toISOString().subsctring(0, 10);
+    var convertDate = new Date(e.target.value).toISOString().substring(0, 10);
     this.studentForm.get('dob')?.setValue(convertDate, {
       onlyself: true
     })
   }
 
   /**Get errors */
-  public handleError = (controleName: string, errorName: string) => {
-    return this.studentForm.controls[controleName].hasError(errorName);
+  public handleError = (controlName: string, errorName: string) => {
+    return this.studentForm.controls[controlName].hasError(errorName);
   }
 
   /**Update Book */
